@@ -199,7 +199,7 @@ class Colore extends State<App> {
           duration: Duration(seconds: 1),
           color: colors[index],
           child: Center(
-            child: Text('coloreTesto', style: TextStyle(fontSize: 40.0)),
+            child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
           ),
         ),
       ),
