@@ -183,7 +183,7 @@ class Colore extends State<App> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue[100],
           title: Text('DisColor Random Color Generator'),
         ),
         floatingActionButton: FloatingActionButton(
@@ -191,12 +191,16 @@ class Colore extends State<App> {
           onPressed: () {
             changeIndex();
           },
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.blue[100],
         ),
         body: AnimatedContainer(
+          width: 1000.0,
+          height: 1000.0,
           duration: Duration(seconds: 1),
           color: colors[index],
-          child: Text(coloreTesto),
+          child: Center(
+            child: Text('coloreTesto', style: TextStyle(fontSize: 40.0)),
+          ),
         ),
       ),
     );
