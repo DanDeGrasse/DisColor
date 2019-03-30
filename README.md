@@ -7,13 +7,13 @@ My first Flutter project.
 * This app generate a new color and print the name of the color (very basic app).
 * In the future it will have a BottomNavigationBar that opens a page with the story of each color.
 
-## Download Section (### APK file to download)
+## Download Section (APK file to download)
 
 * 
 
 ## Flutter Project
 
-[Flutter Site](https://flutter.dev/)
+[flutter.io/dev site](https://flutter.dev/)
 
 
 
