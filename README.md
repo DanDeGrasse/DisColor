@@ -11,15 +11,12 @@ A Flutter based app made by a 16 years old neo-programmer.
 
 * [Discolor Download ](https://drive.google.com/uc?authuser=0&id=1y3DoYUq9-c4bBcKImMcYGB27Jv4iAdgV&export=download)
 
-## Screenshot
-
-![](photo5834488264894033682.jpg)
-
 ## Flutter Project
 
 * [Flutter.io](https://flutter.dev/)
 
-
-
 ## Give me any type of advice! (I like them ;D)
 
+## Screenshot
+
+![](photo5834488264894033682.jpg)
