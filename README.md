@@ -13,7 +13,7 @@ My first Flutter project.
 
 ## Flutter Project
 
-* [Flutter.io/](https://flutter.dev/)
+* [Flutter.io](https://flutter.dev/)
 
 
 
