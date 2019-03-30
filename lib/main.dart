@@ -13,7 +13,8 @@ class App extends StatefulWidget {
 
 class Colore extends State<App> {
   var coloreTesto = 'Colore Sconosciuto';
-  List colors = [
+  int _indexoption = 0;
+  final List colors = [
     Colors.red,
     Colors.green,
     Colors.yellow,
@@ -183,8 +184,11 @@ class Colore extends State<App> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue[100],
-          title: Text('DisColor Random Color Generator'),
+          backgroundColor: Colors.white,
+          title: Text(
+            'DisColor Random Colors',
+            style: TextStyle(color: Colors.black),
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.explore),
@@ -192,6 +196,7 @@ class Colore extends State<App> {
             changeIndex();
           },
           backgroundColor: Colors.blue[100],
+    
         ),
         body: AnimatedContainer(
           width: 1000.0,
@@ -201,6 +206,21 @@ class Colore extends State<App> {
           child: Center(
             child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: _indexoption,
+          onTap: (int index) {
+            _indexoption = index;
+            setState(() {
+          _indexoption = index;
+            });
+          },
+          items: <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+                icon: Icon(Icons.image), title: Text('Story')),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.radio), title: Text('Work In Progress'))
+          ],
         ),
       ),
     );
