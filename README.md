@@ -1,6 +1,6 @@
 # DisColor
 
-My first Flutter project.
+A Flutter based app made by a 16 years old neo-programmer. 
 
 ## What Does This App
 
@@ -17,5 +17,5 @@ My first Flutter project.
 
 
 
-## Give me any type of advice!
+## Give me any type of advice! (I like them ;D)
 
