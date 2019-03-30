@@ -17,6 +17,7 @@ A Flutter based app made by a 16 years old neo-programmer.
 
 ## Give me any type of advice! (I like them ;D)
 
-## Screenshot
+
+## Screenshots
 
 ![](photo5834488264894033682.jpg)
