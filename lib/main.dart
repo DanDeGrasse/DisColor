@@ -13,9 +13,8 @@ class App extends StatefulWidget {
 
 class Colore extends State<App> {
   var coloreTesto = 'Colore Sconosciuto';
-  int _indexoption = 0;
+  int _indextap = 0;
   final List colors = [
-    Colors.red,
     Colors.green,
     Colors.yellow,
     Colors.amber,
@@ -57,130 +56,148 @@ class Colore extends State<App> {
   ];
   Random random = new Random();
 
-  int index = 0;
+  int indexcolor = 0;
 
   void changeIndex() {
-    setState(() => index = random.nextInt(39));
+    setState(() => indexcolor = random.nextInt(37));
   }
 
   Widget build(BuildContext context) {
-    if (colors[index] == Colors.red) {
-      coloreTesto = 'Red';
-    }
-    if (colors[index] == Colors.green) {
+    if (colors[indexcolor] == Colors.green) {
       coloreTesto = 'Green';
     }
-    if (colors[index] == Colors.yellow) {
+    if (colors[indexcolor] == Colors.yellow) {
       coloreTesto = 'Yellow';
     }
-    if (colors[index] == Colors.amber) {
+    if (colors[indexcolor] == Colors.amber) {
       coloreTesto = 'Amber';
     }
-    if (colors[index] == Colors.amberAccent) {
+    if (colors[indexcolor] == Colors.amberAccent) {
       coloreTesto = 'Amber Accent';
     }
-    if (colors[index] == Colors.black) {
+    if (colors[indexcolor] == Colors.black) {
       coloreTesto = 'Black';
     }
-    if (colors[index] == Colors.blue) {
+    if (colors[indexcolor] == Colors.blue) {
       coloreTesto = 'Blue';
     }
-    if (colors[index] == Colors.blueAccent) {
+    if (colors[indexcolor] == Colors.blueAccent) {
       coloreTesto = 'Blue Accent';
     }
-    if (colors[index] == Colors.brown) {
+    if (colors[indexcolor] == Colors.brown) {
       coloreTesto = 'Brown';
     }
-    if (colors[index] == Colors.blueGrey) {
+    if (colors[indexcolor] == Colors.blueGrey) {
       coloreTesto = 'Blue Gray';
     }
-    if (colors[index] == Colors.cyan) {
+    if (colors[indexcolor] == Colors.cyan) {
       coloreTesto = 'Cyan';
     }
-    if (colors[index] == Colors.cyanAccent) {
+    if (colors[indexcolor] == Colors.cyanAccent) {
       coloreTesto = 'Cyan Accent';
     }
-    if (colors[index] == Colors.deepOrange) {
+    if (colors[indexcolor] == Colors.deepOrange) {
       coloreTesto = 'Deep Orange';
     }
-    if (colors[index] == Colors.deepOrangeAccent) {
+    if (colors[indexcolor] == Colors.deepOrangeAccent) {
       coloreTesto = 'Deep Orange Accent';
     }
-    if (colors[index] == Colors.deepPurple) {
+    if (colors[indexcolor] == Colors.deepPurple) {
       coloreTesto = 'Deep Purple';
     }
-    if (colors[index] == Colors.deepPurpleAccent) {
+    if (colors[indexcolor] == Colors.deepPurpleAccent) {
       coloreTesto = 'Deep Purple Accent';
     }
-    if (colors[index] == Colors.green) {
+    if (colors[indexcolor] == Colors.green) {
       coloreTesto = 'Green';
     }
-    if (colors[index] == Colors.greenAccent) {
+    if (colors[indexcolor] == Colors.greenAccent) {
       coloreTesto = 'Green Accent';
     }
-    if (colors[index] == Colors.grey) {
+    if (colors[indexcolor] == Colors.grey) {
       coloreTesto = 'Grey';
     }
-    if (colors[index] == Colors.indigo) {
+    if (colors[indexcolor] == Colors.indigo) {
       coloreTesto = 'Indigo';
     }
-    if (colors[index] == Colors.indigoAccent) {
+    if (colors[indexcolor] == Colors.indigoAccent) {
       coloreTesto = 'Indigo Accent';
     }
-    if (colors[index] == Colors.lightBlue) {
+    if (colors[indexcolor] == Colors.lightBlue) {
       coloreTesto = 'Light Blue';
     }
-    if (colors[index] == Colors.lightBlueAccent) {
+    if (colors[indexcolor] == Colors.lightBlueAccent) {
       coloreTesto = 'Light Blue Accent';
     }
-    if (colors[index] == Colors.lightGreen) {
+    if (colors[indexcolor] == Colors.lightGreen) {
       coloreTesto = 'Light Green';
     }
-    if (colors[index] == Colors.lightGreenAccent) {
+    if (colors[indexcolor] == Colors.lightGreenAccent) {
       coloreTesto = 'Light Green Accent';
     }
-    if (colors[index] == Colors.lime) {
+    if (colors[indexcolor] == Colors.lime) {
       coloreTesto = 'Lime';
     }
-    if (colors[index] == Colors.limeAccent) {
+    if (colors[indexcolor] == Colors.limeAccent) {
       coloreTesto = 'Lime Accent';
     }
-    if (colors[index] == Colors.orange) {
+    if (colors[indexcolor] == Colors.orange) {
       coloreTesto = 'Orange';
     }
-    if (colors[index] == Colors.orangeAccent) {
+    if (colors[indexcolor] == Colors.orangeAccent) {
       coloreTesto = 'Orange Accent';
     }
-    if (colors[index] == Colors.pink) {
+    if (colors[indexcolor] == Colors.pink) {
       coloreTesto = 'Pink';
     }
-    if (colors[index] == Colors.pinkAccent) {
+    if (colors[indexcolor] == Colors.pinkAccent) {
       coloreTesto = 'Pink Accent';
     }
-    if (colors[index] == Colors.purple) {
+    if (colors[indexcolor] == Colors.purple) {
       coloreTesto = 'Purple';
     }
-    if (colors[index] == Colors.purpleAccent) {
+    if (colors[indexcolor] == Colors.purpleAccent) {
       coloreTesto = 'Purple Accent';
     }
-    if (colors[index] == Colors.red) {
+    if (colors[indexcolor] == Colors.red) {
       coloreTesto = 'Red';
     }
-    if (colors[index] == Colors.redAccent) {
+    if (colors[indexcolor] == Colors.redAccent) {
       coloreTesto = 'Red Accent';
     }
-    if (colors[index] == Colors.teal) {
+    if (colors[indexcolor] == Colors.teal) {
       coloreTesto = 'Teal';
     }
-    if (colors[index] == Colors.yellow) {
+    if (colors[indexcolor] == Colors.yellow) {
       coloreTesto = 'Yellow';
     }
-    if (colors[index] == Colors.white) {
+    if (colors[indexcolor] == Colors.white) {
       coloreTesto = 'White';
     }
-    if (colors[index] == Colors.yellowAccent) {
+    if (colors[indexcolor] == Colors.yellowAccent) {
       coloreTesto = 'Yellow Accent';
     }
+
+    Widget selectedCol(BuildContext context, int index) {
+      switch (index) {
+        case 0:
+          return AnimatedContainer(
+            width: 1000,
+            height: 1000,
+            duration: Duration(seconds: 1),
+            color: colors[indexcolor],
+            child: Center(
+              child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
+            ),
+          );
+        case 1:
+          return Container(
+            color: Colors.yellow,
+          );
+      }
+      return null;
+    }
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -190,29 +207,20 @@ class Colore extends State<App> {
             style: TextStyle(color: Colors.black),
           ),
         ),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.explore),
           onPressed: () {
             changeIndex();
           },
           backgroundColor: Colors.blue[100],
-    
         ),
-        body: AnimatedContainer(
-          width: 1000.0,
-          height: 1000.0,
-          duration: Duration(seconds: 1),
-          color: colors[index],
-          child: Center(
-            child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
-          ),
-        ),
+        body: Container(child: selectedCol(context, _indextap)),
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _indexoption,
+          currentIndex: _indextap,
           onTap: (int index) {
-            _indexoption = index;
             setState(() {
-          _indexoption = index;
+              _indextap = index;
             });
           },
           items: <BottomNavigationBarItem>[
