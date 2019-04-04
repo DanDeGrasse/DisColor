@@ -191,9 +191,50 @@ class Colore extends State<App> {
             ),
           );
         case 1:
-          return Container(
-            color: Colors.yellow,
-          );
+          return ListView(children: <Widget>[
+            Container(
+              color: Colors.red,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Red Color'),
+            Container(
+              color: Colors.blue,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Blue Color'),
+            Container(
+              color: Colors.green,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Green Color'),
+            Container(
+              color: Colors.yellow,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Yellow Color'),
+            Container(
+              color: Colors.amber,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Amber Color'),
+            Container(
+              color: Colors.black,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Brown Color'),
+          ]);
       }
       return null;
     }
@@ -203,7 +244,7 @@ class Colore extends State<App> {
         appBar: AppBar(
           backgroundColor: Colors.white,
           title: Text(
-            'DisColor Random Colors',
+            'DisColor',
             style: TextStyle(color: Colors.black),
           ),
         ),
@@ -225,9 +266,9 @@ class Colore extends State<App> {
           },
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(Icons.image), title: Text('Story')),
+                icon: Icon(Icons.image), title: Text('Generator')),
             BottomNavigationBarItem(
-                icon: Icon(Icons.radio), title: Text('Work In Progress'))
+                icon: Icon(Icons.image), title: Text('Colors Story'))
           ],
         ),
       ),
