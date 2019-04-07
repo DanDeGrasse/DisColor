@@ -181,15 +181,28 @@ class Colore extends State<App> {
     Widget selectedCol(BuildContext context, int index) {
       switch (index) {
         case 0:
-          return AnimatedContainer(
-            width: 1000,
-            height: 1000,
-            duration: Duration(seconds: 1),
-            color: colors[indexcolor],
-            child: Center(
-              child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
+          return Column(children: <Widget>[
+            Container(
+              color: Color(0xFF2d3447),
+              child: Text(
+                'Just Discover.',
+                style: TextStyle(
+                    color: Colors.white, fontSize: 46.0, letterSpacing: 1.0),
+              ),
             ),
-          );
+            AnimatedContainer(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(16.0),
+              ),
+              width: 1000,
+              height: 1000,
+              duration: Duration(seconds: 1),
+              color: colors[indexcolor],
+              child: Center(
+                child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
+              ),
+            ),
+          ]);
         case 1:
           return ListView(children: <Widget>[
             Container(
@@ -234,6 +247,42 @@ class Colore extends State<App> {
               width: 100,
             ),
             Text('The Brown Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
+            Container(
+              color: Colors.brown,
+              height: 200,
+              width: 100,
+            ),
+            Text('The Black Color'),
           ]);
       }
       return null;
@@ -241,13 +290,6 @@ class Colore extends State<App> {
 
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          title: Text(
-            'DisColor',
-            style: TextStyle(color: Colors.black),
-          ),
-        ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.explore),
