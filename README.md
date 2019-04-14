@@ -9,7 +9,7 @@ A Flutter based app made by a 16 years old neo-programmer.
 
 ## Download Section (APK file to download)
 
-* [Discolor Download ](https://drive.google.com/uc?authuser=0&id=1VgLqRaUvXHSMuZ-iInotwcZfj0pzY6bO&export=download) Not Updated.
+* [Discolor Download ](https://drive.google.com/uc?authuser=0&id=1VgLqRaUvXHSMuZ-iInotwcZfj0pzY6bO&export=download) (Not Updated)
 
 ## Flutter Project
 
@@ -18,6 +18,5 @@ A Flutter based app made by a 16 years old neo-programmer.
 ## Give me any type of advice! (I like them ;D)
 
 
-## Screenshots
-
+## Screenshots (Not Updated)
 ![](photo5834488264894033682.jpg)
