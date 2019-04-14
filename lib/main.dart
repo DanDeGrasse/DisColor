@@ -183,21 +183,28 @@ class Colore extends State<App> {
         case 0:
           return Column(children: <Widget>[
             Container(
+              width: 50,
+              height: 55,
               color: Color(0xFF2d3447),
-              child: Text(
-                'Just Discover.',
-                style: TextStyle(
-                    color: Colors.white, fontSize: 46.0, letterSpacing: 1.0),
-              ),
             ),
+            Center(
+                child: Text('Just Discover.',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 46.0,
+                        letterSpacing: 1.0))),
+                        Container(
+                          height: 20,
+                          color: Color(0xFF2d3447),
+                        ),
             AnimatedContainer(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(16.0),
+                color: colors[indexcolor],
+                borderRadius: BorderRadius.circular(20.0),
               ),
-              width: 1000,
-              height: 1000,
+              height: 405,
+              width: 384,
               duration: Duration(seconds: 1),
-              color: colors[indexcolor],
               child: Center(
                 child: Text(coloreTesto, style: TextStyle(fontSize: 40.0)),
               ),
@@ -210,79 +217,79 @@ class Colore extends State<App> {
               height: 200,
               width: 100,
             ),
-            Text('The Red Color'),
+            Text('The Red Color',style: TextStyle(color: Colors.white),),
             Container(
               color: Colors.blue,
               height: 200,
               width: 100,
             ),
-            Text('The Blue Color'),
+            Text('The Blue Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.green,
               height: 200,
               width: 100,
             ),
-            Text('The Green Color'),
+            Text('The Green Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.yellow,
               height: 200,
               width: 100,
             ),
-            Text('The Yellow Color'),
+            Text('The Yellow Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.amber,
               height: 200,
               width: 100,
             ),
-            Text('The Amber Color'),
+            Text('The Amber Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.black,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Brown Color'),
+            Text('The Brown Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
             Container(
               color: Colors.brown,
               height: 200,
               width: 100,
             ),
-            Text('The Black Color'),
+            Text('The Black Color',style: TextStyle(color: Colors.white)),
           ]);
       }
       return null;
@@ -290,6 +297,7 @@ class Colore extends State<App> {
 
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Color(0xFF2d3447),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           child: Icon(Icons.explore),
@@ -308,7 +316,7 @@ class Colore extends State<App> {
           },
           items: <BottomNavigationBarItem>[
             BottomNavigationBarItem(
-                icon: Icon(Icons.image), title: Text('Generator')),
+                icon: Icon(Icons.image), title: Text('Discover')),
             BottomNavigationBarItem(
                 icon: Icon(Icons.image), title: Text('Colors Story'))
           ],
