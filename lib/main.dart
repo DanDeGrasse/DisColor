@@ -21,7 +21,6 @@ class Colore extends State<App> {
     Colors.yellow,
     Colors.amber,
     Colors.amberAccent,
-    Colors.black,
     Colors.blue,
     Colors.blueAccent,
     Colors.brown,
@@ -76,8 +75,8 @@ class Colore extends State<App> {
       coloreTesto = 'Amber';
     }
     if (colors[indexcolor] == Colors.amberAccent) {
-      coloreTesto = 'Amber Accent';
-      
+      coloreTesto = 'Amber Accent';}
+
       if (colors[indexcolor] == Colors.black) {
         coloreTesto = 'Black';
       }
@@ -180,8 +179,8 @@ class Colore extends State<App> {
       if (colors[indexcolor] == Colors.yellowAccent) {
         coloreTesto = 'Yellow Accent';
       }
-      return null;
-    }
+
+    
 
     Widget selectedCol(BuildContext context, int index) {
       switch (index) {
@@ -212,235 +211,33 @@ class Colore extends State<App> {
                 ),
               ]);
         case 1:
-          return ListView(scrollDirection: Axis.horizontal, children: <Widget>[
-            Container(
-              color: Colors.red,
-              height: 200,
-              width: 100,
-            ),
+          return ListView(children: <Widget>[
             InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 10.0, bottom: 10.0),
+                    child: Text(
+                      'The Red Color',
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Calibre-Semibold",
+                          fontSize: 20.0),
+                    ),
+                  ),
                 ),
                 onTap: () async {
                   if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
                     await launch("https://en.wikipedia.org/wiki/Red");
                   }
                 }),
-            Container(
-              color: Colors.blue,
-              height: 200,
-              width: 100,
-            ),
             InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.green,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.yellow,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.amber,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.black,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
-                ),
-                onTap: () async {
-                  if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
-                    await launch("https://en.wikipedia.org/wiki/Red");
-                  }
-                }),
-            Container(
-              color: Colors.brown,
-              height: 200,
-              width: 100,
-            ),
-            InkWell(
-                child: Text(
-                  'The Red Color',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: "Calibre-Semibold",
-                      fontSize: 20.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(20.0),
+                  ),
+                  width: 360,
+                  height: 200,
                 ),
                 onTap: () async {
                   if (await canLaunch("https://en.wikipedia.org/wiki/Red")) {
@@ -449,7 +246,6 @@ class Colore extends State<App> {
                 }),
           ]);
       }
-
       return null;
     }
 
